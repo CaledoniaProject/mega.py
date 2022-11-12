@@ -715,7 +715,7 @@ class Mega:
             for chunk_start, chunk_size in get_chunks(file_size):
                 chunk = input_file.read(chunk_size)
                 chunk = aes.decrypt(chunk)
-                temp_output_file.write(chunk))
+                temp_output_file.write(chunk)
                 i = 0
 
                 encryptor = AES.new(k_str, AES.MODE_CBC, iv_str)
